@@ -133,49 +133,30 @@
             background: linear-gradient(45deg, #8B4513, #D2B48C);
         }
 
+.boot-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+}
+
+.boot-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+        
         .image-card:hover {
             transform: translateY(-10px);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
         }
 
-        .boot-image {
-            width: 100%;
-            height: 250px;
-            border-radius: 10px;
-            margin-bottom: 1rem;
-            background: linear-gradient(135deg, #8B4513, #D2B48C);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            transition: transform 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .boot-image::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="50" font-size="30" text-anchor="middle" x="50" fill="white">👢</text></svg>');
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .boot-image[data-boot="yellow"]::before { content: '🥾'; font-size: 4rem; color: white; display: flex; align-items: center; justify-content: center; height: 100%; }
-        .boot-image[data-boot="black"]::before { content: '🦶'; font-size: 4rem; color: white; display: flex; align-items: center; justify-content: center; height: 100%; }
-        .boot-image[data-boot="blue"]::before { content: '👢'; font-size: 4rem; color: white; display: flex; align-items: center; justify-content: center; height: 100%; }
-        .boot-image[data-boot="brown"]::before { content: '👞'; font-size: 4rem; color: white; display: flex; align-items: center; justify-content: center; height: 100%; }
-
-        .image-card:hover .boot-image {
-            transform: scale(1.05);
-        }
-
-        .image-card h3 {
+         .image-card h3 {
             color: #333;
             margin-bottom: 0.5rem;
             font-size: 1.3rem;
@@ -299,31 +280,40 @@
             <p>At New Boots, we believe that the right footwear can transform not just your look, but your entire day. Our carefully curated collection features premium boots crafted from the finest materials, designed to provide comfort, durability, and timeless style. Whether you're heading to the office, exploring the great outdoors, or stepping out for a night on the town, we have the perfect boots to complement your journey.</p>
         </section>
 
-        <div class="content-grid">
-            <div class="image-card">
-                <div class="boot-image" data-boot="yellow"></div>
-                <h3>WODEN Track Waterproof – Ochre</h3>
-                <p>Magda Track is een duurzame, waterdichte laars die is gemaakt van 70% natuurlijk rubber.</p>
-            </div>
-
-            <div class="image-card">
-                <div class="boot-image" data-boot="black"></div>
-                <h3>Blackfox laarzen dames - Cheyennetoo - Antraciet</h3>
-                <p>Deze laarzen zijn ultra warm en volledig waterdicht. Echt heerlijk om te dragen deze winter. Het geborstelde PVC geeft deze laars een suède look.</p>
-            </div>
-
-            <div class="image-card">
-                <div class="boot-image" data-boot="blue"></div>
-                <h3>Terräng Low Neo — Regenlaarzen Dames</h3>
-                <p>Lage rubberlaarzen met een warme neopreen voering en van natuurrubber.</p>
-            </div>
-
-            <div class="image-card">
-                <div class="boot-image" data-boot="brown"></div>
-                <h3>Wvsport Country Laarzen Donkerbruin</h3>
-                <p>Sport-laatzen ontworpen in de Dolomieten, gemaakt van Vibram rubberen injectiezolen voor supergrip, tractie en duurzaamheid.</p>
-            </div>
+       <div class="content-grid">
+    <div class="image-card">
+        <div class="boot-image">
+            <img src="fig1.jpg" alt="WODEN Track Waterproof – Ochre">
         </div>
+        <h3>WODEN Track Waterproof – Ochre</h3>
+        <p>Magda Track is een duurzame, waterdichte laars die is gemaakt van 70% natuurlijk rubber.</p>
+    </div>
+
+    <div class="image-card">
+        <div class="boot-image">
+            <img src="fig2.jpg" alt="Blackfox laarzen dames - Cheyennetoo - Antraciet">
+        </div>
+        <h3>Blackfox laarzen dames - Cheyennetoo - Antraciet</h3>
+        <p>Deze laarzen zijn ultra warm en volledig waterdicht. Echt heerlijk om te dragen deze winter. Het geborstelde PVC geeft deze laars een suède look.</p>
+    </div>
+
+    <div class="image-card">
+        <div class="boot-image">
+            <img src="fig3.jpg" alt="Terräng Low Neo — Regenlaarzen Dames">
+        </div>
+        <h3>Terräng Low Neo — Regenlaarzen Dames</h3>
+        <p>Lage rubberlaarzen met een warme neopreen voering en van natuurrubber.</p>
+    </div>
+
+    <div class="image-card">
+        <div class="boot-image">
+            <img src="fig4.jpg" alt="Wvsport Country Laarzen Donkerbruin">
+        </div>
+        <h3>Wvsport Country Laarzen Donkerbruin</h3>
+        <p>Sport-laatzen ontworpen in de Dolomieten, gemaakt van Vibram rubberen injectiezolen voor supergrip, tractie en duurzaamheid.</p>
+    </div>
+</div>
+
 
         <footer>
             <p>&copy; 2025 New Boots Company. Crafting Quality Footwear Since 1985.</p>
